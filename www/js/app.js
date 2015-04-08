@@ -39,34 +39,43 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-    url: "/browse",
+  .state('app.features', {
+  url: "/features",
+  views: {
+    'menuContent': {
+      templateUrl: "templates/features.html",
+      controller: 'BooksCtrl'
+    }
+  }
+})
+
+.state('app.feature', {
+  url:"/feature/:bookId",
+  views: {
+    'menuContent': {
+      templateUrl: "templates/feature.html",
+      controller: 'BooksCtrl'
+    }
+  }
+})
+
+  .state('app.favourites', {
+    url: "/favourites",
     views: {
       'menuContent': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/favourites.html"
       }
     }
   })
 
-    .state('app.features', {
-      url: "/features",
-      views: {
-        'menuContent': {
-          templateUrl: "templates/features.html",
-          controller: 'BooksCtrl'
-        }
+.state('app.about', {
+    url: "/about",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/about.html"
       }
-    })
-
-    .state('app.feature', {
-      url:"/feature/:bookId",
-      views: {
-        'menuContent': {
-          templateUrl: "templates/feature.html",
-          controller: 'BooksCtrl'
-        }
-      }
-    });
+    }
+  })
 
 $urlRouterProvider.otherwise('/app/features');
 });
