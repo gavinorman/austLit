@@ -33,16 +33,29 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('BooksCtrl', function ($scope) {
+  $scope.books = [ 
+  {title: 'book1', author: 'auth1', id: 1},
+  {title: 'book2', author: 'auth2', id: 2},
+  {title: 'book3', author: 'auth3', id: 3},
+  {title: 'book4', author: 'auth4', id: 4}
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+controller('BooksCtrl', function($scope, $stateParams){
+
 });
+
+// .controller('PlaylistsCtrl', function($scope) {
+//   $scope.playlists = [
+//     { title: 'Reggae', id: 1 },
+//     { title: 'Chill', id: 2 },
+//     { title: 'Dubstep', id: 3 },
+//     { title: 'Indie', id: 4 },
+//     { title: 'Rap', id: 5 },
+//     { title: 'Cowbell', id: 6 }
+//   ];
+// })
+
+// .controller('PlaylistCtrl', function($scope, $stateParams) {
+// });

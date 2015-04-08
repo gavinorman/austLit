@@ -1,0 +1,12 @@
+<ion-view view-title="Features">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat ="book in books" href="#/app/feature/{{books.id}}">
+      {{book.title + " by " + book.author}} 
+
+      <!-- <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}} -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

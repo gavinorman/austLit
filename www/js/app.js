@@ -47,25 +47,48 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-    .state('app.playlists', {
-      url: "/playlists",
+
+    .state('app.features', {
+      url: "/features",
       views: {
         'menuContent': {
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/features.html",
+          controller: 'BooksCtrl'
         }
       }
     })
 
-  .state('app.single', {
-    url: "/playlists/:playlistId",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/playlist.html",
-        controller: 'PlaylistCtrl'
+    .state('app.feature', {
+      url:"/feature/:bookId",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/feature.html",
+          controller: 'BooksCtrl'
+        }
       }
-    }
-  });
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+    });
+
+$urlRouterProvider.otherwise('/app/features');
 });
+    // .state('app.playlists', {
+    //   url: "/playlists",
+    //   views: {
+    //     'menuContent': {
+    //       templateUrl: "templates/playlists.html",
+    //       controller: 'BooksCtrl'
+    //     }
+    //   }
+    // })
+
+  // .state('app.single', {
+  //   url: "/playlists/:bookId",
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: "templates/playlist.html",
+  //       controller: 'BooksCtrl'
+  //     }
+  //   }
+  // });
+  // if none of the above states are matched, use this as the fallback
+//   $urlRouterProvider.otherwise('/app/playlists');
+// });
