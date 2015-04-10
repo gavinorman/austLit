@@ -2759,7 +2759,7 @@ ion-infinite-scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #f1f2ee;
   overflow: hidden; }
 
 .view-container {

@@ -1,5 +1,41 @@
 <ion-view view-title="Favourites">
   <ion-content>
-    <h1>Favourites</h1>
+  	<div class="list">
+  		<a class="item item-icon-right" ng-repeat="book in books" ui-sref="app.book({ id: book.bookId})">
+  			<div class="row">
+  				<div class="col">
+  					<
+  				</div>
+  				<div class="col">
+  					<div class="row">
+  					</div>
+  					<div class="row">
+  					</div>
+  					<div class="row">
+  					</div>
+  				</div>
+  			</div>
+  	</div>
+
+    <!-- <ion-list
+    	show-delete="shouldShowDelete"
+    	show-reorder="shouldShowReorder"
+    	can-swipe="listCanSwipe">
+      <ion-item ng-repeat ="book in books" class="item-thumbnail-left">
+      		<!-- {{book.title + " by " + book.author}} 
+      <ion-option-button class="button-positive" ng-click="share(book)">
+      Share
+  	  </ion-option-button>
+  	  <ion-option-button class="button-info" ng-click="edit(book)">
+      Edit
+  	  </ion-option-button>
+	  <ion-delete-button class="ion-minus-circled" ng-click="books.splice($index, 1)">
+  	  </ion-delete-button>
+  	  <ion-reorder-button class="ion-navicon" on-reorder="reorderBook(book, $fromIndex, $toIndex)">
+  	  </ion-reorder-button> -->
+  	        <!-- <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}} -->
+      <!-- </ion-item>
+    </ion-list> -->
   </ion-content>
 </ion-view>

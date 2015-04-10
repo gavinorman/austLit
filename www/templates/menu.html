@@ -14,13 +14,14 @@
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
+      <h1 class="title">Nav</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>        
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
-        </ion-item>
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" placeholder="Search">
+        </label>
         <ion-item nav-clear menu-close href="#/app/features">
           Featured
         </ion-item>
@@ -38,5 +39,11 @@
         </ion-item>
       </ion-list>
     </ion-content>
+      <ion-footer-bar align-title="left" class="bar-stable">
+        <!-- <div class="buttons">
+          <button class="button">Left Button</button>
+        </div> -->
+        <h1 class="title">AustLit</h1>
+      </ion-footer-bar>
   </ion-side-menu>
 </ion-side-menus>

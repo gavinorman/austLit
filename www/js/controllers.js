@@ -33,29 +33,53 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('BooksCtrl', function ($scope) {
+.controller('FavCtrl', function ($scope) {
+  //  $scope.data = {
+  //   showDelete:false
+  // };
+
+  // $scope.edit = function(book){
+  //   alert('Edit Book: ' + book.id);
+  // };
+  // $scope.share = funtion(book){
+  //   alert('Share Book: ' + book.id);
+  // };
+  // $scope.moveBook = function(book, fromIndex, toIndex){
+  //   $scope.books.splice(fromIndex,1);
+  //   $scope.books.splice(toIndex, 0, book);
+  // };
   $scope.books = [ 
-  {title: 'book1', author: 'auth1', id: 1},
-  {title: 'book2', author: 'auth2', id: 2},
-  {title: 'book3', author: 'auth3', id: 3},
-  {title: 'book4', author: 'auth4', id: 4}
+  {title: 'book5', author: 'auth5', id: 5},
+  {title: 'book6', author: 'auth6', id: 6},
+  {title: 'book7', author: 'auth7', id: 7},
+  {title: 'book8', author: 'auth8', id: 8}
   ];
+})
+
+.controller('BooksCtrl', function ($scope) {
+  $scope.images =[];
+  $scope.loadImages = function(){
+    for(var i = 0; i <100; i++){
+      $scope.images.push({id: i, src: "http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg"});
+    }
+  }
+  // $scope.books = [ 
+  // {title: 'book1', author: 'auth1', id: 1},
+  // {title: 'book2', author: 'auth2', id: 2},
+  // {title: 'book3', author: 'auth3', id: 3},
+  // {title: 'book4', author: 'auth4', id: 4}
+  // ];
 })
 
 controller('BooksCtrl', function($scope, $stateParams){
 
 });
 
-// .controller('PlaylistsCtrl', function($scope) {
-//   $scope.playlists = [
-//     { title: 'Reggae', id: 1 },
-//     { title: 'Chill', id: 2 },
-//     { title: 'Dubstep', id: 3 },
-//     { title: 'Indie', id: 4 },
-//     { title: 'Rap', id: 5 },
-//     { title: 'Cowbell', id: 6 }
-//   ];
-// })
-
-// .controller('PlaylistCtrl', function($scope, $stateParams) {
+// .controller("FeaturedCtrl", function($scope){
+//   $scope.images =[];
+//   $scope.loadImages = function(){
+//     for(var i = 0; i <100; i++){
+//       $scope.images.push({id: i, src: "http://placehold.it/50x50"});
+//     }
+//   }
 // });

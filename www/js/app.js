@@ -59,14 +59,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   }
 })
 
-  .state('app.favourites', {
-    url: "/favourites",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/favourites.html"
-      }
+.state('app.favourites', {
+  url: "/favourites",
+  views: {
+    'menuContent': {
+      templateUrl: "templates/favourites.html",
+      controller: 'FavCtrl'
     }
-  })
+  }
+})
 
 .state('app.about', {
     url: "/about",
