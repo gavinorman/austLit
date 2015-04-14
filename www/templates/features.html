@@ -1,5 +1,9 @@
+<div class="bar bar-header">
+  <h1 class="title">Header</h1>
+</div>
 <ion-view view-title="Featured">
   <ion-content ng-contrller="FeaturedCtrl" ng-init="loadImages()">
+
   		 <div class="row" ng-repeat="cover in covers" ng-if="$index % 2 === 0">
         <div class="col" ng-if="$index < covers.length">
             <img ng-src="{{covers[$index].src}}" width="90%" />
