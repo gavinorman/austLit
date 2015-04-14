@@ -78,7 +78,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-$urlRouterProvider.otherwise('/app/features');
+$urlRouterProvider.otherwise('/app/favourites');
 });
     // .state('app.playlists', {
     //   url: "/playlists",
