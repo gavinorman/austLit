@@ -26,33 +26,34 @@
             <i class="icon ion-search placeholder-icon"></i>
             <input type="search" placeholder="Search">
           </label>
-          <ion-item item-icon-left menu-close href="#/app/features">
-            <i class="ion-ios-star"></i>
-            Featured
-             <span class="badge badge-assertive">7</span>
+          
+          <ion-item nav-clear menu-close href="#/app/featured" class="icon item-icon-left">
+               <i class="icon ion-ios-star custom-icon"></i>
+               Featured
+               <span class="badge badge-assertive">7</span>
           </ion-item>
-          <ion-item item-icon-left nav-clear menu-close href="#/app/favourites">
-          <i class="icon ion-ios-heart"></i>
-            Favourited
+
+          <ion-item nav-clear menu-close href="#/app/favourites" class="icon item-icon-left">
+               <i class="icon ion-ios-heart"></i>
+               Favourites
           </ion-item>
-          <ion-item nav-clear menu-close ng-click="login()">
-          <i class="icon ion-ios-person"></i>
-            Login
-            <span class="item-note">
-              New Account
-            </span>
+
+          <ion-item nav-clear menu-close ng-click="login()" class="icon item-icon-left">
+               <i class="icon ion-ios-person"></i>
+               Login
+               <span class="item-note">
+                New Account
+                </span>
           </ion-item>
-          <ion-item nav-clear menu-close href="#/app/about">
-          <i class="icon ion-information"></i>
-            About
+
+          <ion-item nav-clear menu-close href="#/app/about" class="icon item-icon-left">
+               <i class="icon ion-information"></i>
+               About
           </ion-item>
         </ion-list>
       </ion-content>
 
       <ion-footer-bar align-title="left" class="bar-stable">
-        <!-- <div class="buttons">
-          <button class="button">Left Button</button>
-        </div> -->
         <h1 class="title">AustLit</h1>
       </ion-footer-bar>
 

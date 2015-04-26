@@ -36,7 +36,7 @@ angular.module('starter.controllers', [])
 .controller('FavCtrl', function ($scope) {
     $scope.covers =[];
   $scope.loadImages = function(){
-    for(var i = 0; i <4; i++){
+    for(var i = 0; i <100; i++){
       $scope.covers.push({id: i, src: "http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg"});
     }
   }
@@ -67,7 +67,7 @@ angular.module('starter.controllers', [])
 .controller('BooksCtrl', function ($scope) {
   $scope.covers =[];
   $scope.loadImages = function(){
-    for(var i = 0; i <4; i++){
+    for(var i = 0; i <6; i++){
       $scope.covers.push({id: i, src: "http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg"});
     }
   }

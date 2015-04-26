@@ -78,27 +78,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-$urlRouterProvider.otherwise('/app/favourites');
+$urlRouterProvider.otherwise('/app/features');
 });
-    // .state('app.playlists', {
-    //   url: "/playlists",
-    //   views: {
-    //     'menuContent': {
-    //       templateUrl: "templates/playlists.html",
-    //       controller: 'BooksCtrl'
-    //     }
-    //   }
-    // })
-
-  // .state('app.single', {
-  //   url: "/playlists/:bookId",
-  //   views: {
-  //     'menuContent': {
-  //       templateUrl: "templates/playlist.html",
-  //       controller: 'BooksCtrl'
-  //     }
-  //   }
-  // });
-  // if none of the above states are matched, use this as the fallback
-//   $urlRouterProvider.otherwise('/app/playlists');
-// });
