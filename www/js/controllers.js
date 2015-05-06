@@ -8,10 +8,16 @@ angular.module('starter.controllers', [])
   $scope.showPopup = function() {
     var myPopup = $ionicPopup.show({
       templateUrl: 'popup.html',
+      animation: 'slide-in-up',
       scope: $scope,
+      buttons: [
+       { text: 'Close',
+         type: 'button-balanced',
+       },
+     ]
     });
     alertPopup.then(function(res) {
-      console.log('Thank you for not eating my delicious ice cream cone');
+      // console.log('Thank you for not eating my delicious ice cream cone');
     });
   };
 
@@ -43,7 +49,7 @@ angular.module('starter.controllers', [])
     // code if using a login system
     $timeout(function() {
       $scope.closeLogin();
-    }, 1000);
+    }, 1000); 
   };
 })
 
@@ -81,12 +87,13 @@ angular.module('starter.controllers', [])
 .controller('BooksCtrl', function ($scope) {
   $scope.covers =[];
   $scope.loadImages = function(){
-    for(var i = 0; i <6; i++){
-      $scope.covers.push({id: i, src: "http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg"});
+    for(var i = 1; i < 9; i++){
+      if (i %2 == 0){
+          $scope.covers.push({id: i, src: "img/book3.jpg"});
+      }
+      else {
+          $scope.covers.push({id: i, src: "img/book2.jpg"});
+      }
     }
   }
-})
-
-controller('BooksCtrl', function($scope, $stateParams){
-
 });

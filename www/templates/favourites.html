@@ -7,7 +7,7 @@
       </label>
         <div class="list card">
           <div class="item item-thumbnail-left item-button right">
-            <img src="http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg">
+            <img src="img/book1.jpg">
             <h2>Book Title</h2>
               <p>by Author</p>
               <p>Last page accessed pg.17</p>
@@ -16,7 +16,7 @@
               <div class="button-bar">
                     <button class="button button-assertive button-outline button-block"><i class="icon ion-ios-heart"></i></button>
                     <button class="button button-positive button-outline button-block"><i class="icon ion-social-facebook"></i></button>
-                    <button class="button button-balanced button-outline button-block"><i class="icon ion-eye"></i></button>
+                    <button class="button button-balanced button-outline button-block" ng-click="viewer()"><i class="icon ion-eye"></i></button>
               </div>
           </div>
 
@@ -31,7 +31,7 @@
 
         <div class="list card">
           <div class="item item-thumbnail-left item-button right">
-            <img src="http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg">
+            <img src="img/book3.jpg">
             <h2>Book Title</h2>
               <p>by Author</p>
               <p>Last page accessed pg.17</p>
@@ -55,54 +55,56 @@
 
         </div>
 
-        
-        <!-- <div class="list card">
-            <a class="item item-thumbnail-left item-button right" href="#"> 
-              <img src="http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg" style="height: 250px">
-              <h2>Book Title</h2>
+        <div class="list card">
+          <div class="item item-thumbnail-left item-button right">
+            <img src="img/book2.jpg">
+            <h2>Book Title</h2>
               <p>by Author</p>
               <p>Last page accessed pg.17</p>
-              
-              <button class="button button-block button-balanced">
+
+              <!-- <button class="button button-block button-balanced">
                 Read on!
-              </button>
-            </a>
-        </div> -->
-        <!-- <div class="row" >
-  				<div class="col">
-  					<img src="http://40.media.tumblr.com/560e8a5729181645c76461a1aece303e/tumblr_n0ly6r6ZZG1s52v17o2_500.jpg" style="height: 250px">
-  				</div>
-          <div class="col">
-            <div class="row">
-              <p>row 1</p>
-            </div>
-            <div class="row">
-              <p>row 2</p>
-            </div>
-            <div class="row">
-              <p>row 3</p>
-            </div>
+              </button> -->
+              <div class="button-bar">
+                    <button class="button button-assertive button-outline button-block"><i class="icon ion-ios-heart"></i></button>
+                    <button class="button button-positive button-outline button-block"><i class="icon ion-social-facebook"></i></button>
+                    <button class="button button-balanced button-outline button-block"><i class="icon ion-eye"></i></button>
+              </div>
           </div>
-  			</div> -->
-    <!-- <ion-list
-    	show-delete="shouldShowDelete"
-    	show-reorder="shouldShowReorder"
-    	can-swipe="listCanSwipe">
-      <ion-item ng-repeat ="book in books" class="item-thumbnail-left">
-      		<!-- {{book.title + " by " + book.author}} 
-      <ion-option-button class="button-positive" ng-click="share(book)">
-      Share
-  	  </ion-option-button>
-  	  <ion-option-button class="button-info" ng-click="edit(book)">
-      Edit
-  	  </ion-option-button>
-	  <ion-delete-button class="ion-minus-circled" ng-click="books.splice($index, 1)">
-  	  </ion-delete-button>
-  	  <ion-reorder-button class="ion-navicon" on-reorder="reorderBook(book, $fromIndex, $toIndex)">
-  	  </ion-reorder-button> -->
-  	        <!-- <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}} -->
-      <!-- </ion-item>
-    </ion-list> -->
+
+          <a class="item item-icon-left dark" href="#">
+            <i class="icon ion-edit"></i>
+            Comment
+<!--             <i class="icon ion-social-twitter"></i>
+            <i class="icon ion-social-googleplus"></i> -->
+          </a>
+
+        </div>
+
+        <div class="list card">
+          <div class="item item-thumbnail-left item-button right">
+            <img src="img/book5.jpg">
+            <h2>Book Title</h2>
+              <p>by Author</p>
+              <p>Last page accessed pg.17</p>
+
+              <!-- <button class="button button-block button-balanced">
+                Read on!
+              </button> -->
+              <div class="button-bar">
+                    <button class="button button-assertive button-outline button-block"><i class="icon ion-ios-heart"></i></button>
+                    <button class="button button-positive button-outline button-block"><i class="icon ion-social-facebook"></i></button>
+                    <button class="button button-balanced button-outline button-block"><i class="icon ion-eye"></i></button>
+              </div>
+          </div>
+
+          <a class="item item-icon-left dark" href="#">
+            <i class="icon ion-edit"></i>
+            Comment
+<!--             <i class="icon ion-social-twitter"></i>
+            <i class="icon ion-social-googleplus"></i> -->
+          </a>
+
+        </div>
   </ion-content>
 </ion-view>
