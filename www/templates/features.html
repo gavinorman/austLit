@@ -1,14 +1,14 @@
 <ion-view>
-  <ion-nav-title>Featured
-        <img src="img/logotrans.png" height="35px" align="right">       
-    </ion-nav-title>
+  <ion-nav-title>
+      Featured             
+  </ion-nav-title>
   <ion-content ng-contrller="FeaturedCtrl" ng-init="loadImages()">
   		 <div class="row" ng-repeat="cover in covers" ng-if="$index % 2 === 0">
         <div class="col col-50" ng-if="$index < covers.length">
-            <img ng-src="{{covers[$index].src}}" width="90%" />
+            <img ng-src="{{covers[$index].src}}" width="90%" ng-click="showPopup()"/>
         </div>
         <div class="col col-50" ng-if="$index + 1 < covers.length">
-            <img ng-src="{{covers[$index + 1].src}}" width="90%" />
+            <img ng-src="{{covers[$index + 1].src}}" width="90%" ng-click="showPopup()"/>
         </div>
     </div>
     <!-- <ion-list>

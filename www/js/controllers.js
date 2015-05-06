@@ -1,6 +1,20 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $ionicPopup, $timeout) {
+
+  $scope.data = {}
+  
+  // Triggered on a button click, or some other target
+  $scope.showPopup = function() {
+    var myPopup = $ionicPopup.show({
+      templateUrl: 'popup.html',
+      scope: $scope,
+    });
+    alertPopup.then(function(res) {
+      console.log('Thank you for not eating my delicious ice cream cone');
+    });
+  };
+
   // Form data for the login modal
   $scope.loginData = {};
 

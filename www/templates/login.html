@@ -1,32 +1,17 @@
 <ion-modal-view>
   <ion-header-bar class="bar-stable">
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Back</button>
-    </div>
-  </ion-header-bar>
-  <ion-content>
-     <div class="row">
-        <div class="col col-300"></div>
-        <div class="col"><img src="img/ribbon.png" height="200px"></div>
-        <div class="col col-40"></div>
-      </div>
-
-  <!-- 
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
-      </div>
-    </form> -->
-  </ion-content>
+        <h1 class="title">Modal</h1>
+        <div class="buttons">
+            <button class="button button-dark button-clear" ng-click="closeLogin()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content padding="true" scroll="false" class="has-header" align="center">
+        <img src="http://s11.postimg.org/yq4fit1k3/ribbon.png" >
+        <ion-list></ion-list>
+        <button class="button button-stable button-block">Sign Up!</button>
+        <div>
+            <p>or</p>
+        </div>
+        <button class="button button-stable button-block">Log-in</button>
+    </ion-content>
 </ion-modal-view>

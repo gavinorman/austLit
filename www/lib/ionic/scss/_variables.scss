@@ -11,15 +11,7 @@ $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
-$brown:							  #603b1b !default;
-$mediumbrown:					  #bda98a !default;
-$lightbrown:					  #e1dfcf !default;
-$grey:							  #7a7a7a !default;
 
-$creambrown:					  #dccca3 !default;
-$darkgrey:						  #435058 !default;
-$neongreen:						  #dcf763 !default;
-$pearlwhite:					  #f1f2ee !default;
 
 // Base
 // -------------------------------
@@ -43,7 +35,7 @@ $headings-font-family:            $font-family-base !default;
 $headings-font-weight:            500 !default;
 $headings-line-height:            1.2 !default;
 
-$base-background-color:           #f1f2ee !default;
+$base-background-color:           #fff !default;
 $base-color:                      #000 !default;
 
 $link-color:                      $positive !default;
@@ -312,8 +304,8 @@ $item-avatar-width:               40px !default;
 $item-avatar-height:              40px !default;
 $item-avatar-border-radius:       50% !default;
 
-$item-thumbnail-width:            100px !default;
-$item-thumbnail-height:           140px !default;
+$item-thumbnail-width:            80px !default;
+$item-thumbnail-height:           80px !default;
 $item-thumbnail-margin:           10px !default;
 
 $item-divider-bg:                 #f5f5f5 !default;
